@@ -5,55 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pappas Konstantinos | Automation Engineer</title>
   <style>
+    /* GENERAL STYLING */
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Arial", sans-serif;
       background: #0f172a;
       color: #e5e7eb;
       margin: 0;
       padding: 0;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
       padding: 40px 20px;
     }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin-bottom: 0;
     }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 1.3em;
+      margin-bottom: 30px;
+    }
+
     h2 {
       color: #38bdf8;
       margin-top: 50px;
+      margin-bottom: 20px;
     }
-    .subtitle {
-      color: #94a3b8;
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-    .contact {
-      margin-top: 20px;
-    }
+
+    /* CARDS */
     .card {
       background: #020617;
       padding: 20px;
       border-radius: 12px;
       margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
+
+    /* SKILLS */
     .skills span {
       display: inline-block;
       background: #1e293b;
       padding: 8px 12px;
       border-radius: 8px;
       margin: 6px;
-      font-size: 0.9em;
+      font-size: 0.95em;
     }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
+
+    /* CONTACT TOOLBAR */
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
     }
+
     .contact a {
-      display: inline-block;
-      margin-right: 20px;
+      flex: 1 1 150px;
+      background-color: #1e293b;
+      color: #38bdf8;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .contact a:hover {
+      background-color: #0ea5e9;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* LINKS GENERAL */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      .subtitle { font-size: 1em; }
+      .contact a { flex: 1 1 100%; }
     }
   </style>
 </head>
@@ -61,13 +100,18 @@
 
 <div class="container">
 
+  <!-- HEADER -->
   <h1>Pappas Konstantinos</h1>
   <div class="subtitle">Automation & Industrial Control Engineer</div>
+
+  <!-- CONTACT TOOLBAR -->
   <div class="card contact">
     <a href="mailto:pappas.kwstas@gmail.com">📧 Email</a>
     <a href="https://github.com/PappasKonstantinos" target="_blank">💻 GitHub</a>
+    <a href="Pappas_Konstantinos_CV.pdf" download>📄 Download CV</a>
   </div>
 
+  <!-- PROFILE SUMMARY -->
   <div class="card">
     <p>
       Industrial automation engineer with experience in PLC, SCADA and safety systems
@@ -76,6 +120,7 @@
     </p>
   </div>
 
+  <!-- CORE SKILLS -->
   <h2>Core Skills</h2>
   <div class="card skills">
     <span>Siemens PLC (S7-1200 / S7-1500 / F)</span>
@@ -88,41 +133,34 @@
     <span>Custom Electronics / PCB</span>
   </div>
 
+  <!-- SELECTED PROJECTS -->
   <h2>Selected Projects</h2>
 
-<div class="card">
-  <strong>QR Traceability System – Steel Industry</strong><br>
-  <em>WinCC Professional, VBScript, Industrial Printing</em><br>
-  Designed and implemented QR-based product tracking system for metal production lines.
-</div>
+  <div class="card">
+    <strong>QR Traceability System – Steel Industry</strong><br>
+    <em>WinCC Professional, VBScript, Industrial Printing</em><br>
+    Designed and implemented QR-based product tracking system for metal production lines.
+  </div>
 
-<div class="card">
-  <strong>Safety PLC Applications</strong><br>
-  <em>Siemens S7-1500F, IEC 61508, ISO 13849</em><br>
-  Development and commissioning of safety logic and diagnostics for industrial machinery.
-</div>
+  <div class="card">
+    <strong>Safety PLC Applications</strong><br>
+    <em>Siemens S7-1500F, IEC 61508, ISO 13849</em><br>
+    Development and commissioning of safety logic and diagnostics for industrial machinery.
+  </div>
 
-<div class="card">
-  <strong>OPC Data Integration</strong><br>
-  <em>OPC DA, Python, ibaPDA</em><br>
-  Industrial data acquisition and analysis from OPC servers.
-</div>
+  <div class="card">
+    <strong>OPC Data Integration</strong><br>
+    <em>OPC DA, Python, ibaPDA</em><br>
+    Industrial data acquisition and analysis from OPC servers.
+  </div>
 
-<div class="card">
-  <strong>Custom MOSFET Output Modules</strong><br>
-  <em>Power Electronics, PCB Design</em><br>
-  Designed MOSFET-based output boards as SSR relay replacements.
-</div>
-
-
-  <h2>Contact</h2>
-  <div class="card contact">
-    <a href="mailto:pappas.kwstas@gmail.com">Email</a>
-    <a href="https://pappaskonstantinos.github.io/" target="_blank">GitHub</a>
+  <div class="card">
+    <strong>Custom MOSFET Output Modules</strong><br>
+    <em>Power Electronics, PCB Design</em><br>
+    Designed MOSFET-based output boards as SSR relay replacements.
   </div>
 
 </div>
 
 </body>
 </html>
-
